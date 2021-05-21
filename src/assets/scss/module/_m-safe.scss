@@ -1,0 +1,73 @@
+@import '../base/colors';
+
+.safe-lock {
+  width: 460px;
+  background-color: $panel-body;
+  border: 1px solid darken($panel-body, 30%);
+}
+
+.lock-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 156px;
+  margin: 30px auto;
+  color: $screen-text;
+  font-weight: regular;
+  border: 1px solid darken($panel-body, 5%);
+  padding: 1rem;
+
+  & .status {
+    font-size: 20px;
+  }
+
+  & .output {
+    font-size: 40px;
+    text-align: right;
+    overflow-x: auto;
+  }
+}
+
+.lock-screen-off {
+  background-color: $screen-off;
+}
+
+.lock-screen-on {
+  background-color: $screen-on;
+}
+
+.lock-dial {
+  width: 300px;
+  height: 406px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.lock-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  background-color: $button;
+  color: $button-text;
+  border: 1px solid darken($button, 10%);
+  font-size: 44px;
+  font-weight: medium;
+
+  &:active {
+    background-color: darken($button, 10%);
+  }
+}
+
+.serial-number {
+  color: $background;
+  text-align: right;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: medium;
+}
